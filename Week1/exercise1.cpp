@@ -76,6 +76,4 @@ int main(){
     if(hazchem.length() == 3 && hazchem[2] == 'E'){
         cout << "Evacuation:\tconsider evacuation" << endl;
     }
-
-    cout << "*******************************" ;
 }
