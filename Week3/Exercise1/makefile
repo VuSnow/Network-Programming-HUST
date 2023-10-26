@@ -1,0 +1,15 @@
+CC = gcc
+
+CLIENT_SOURCE = client.c 
+CLIENT_EXE = client
+
+SERVER_SOURCE = server.c 
+SERVER_EXE = server
+
+all:
+$(CLIENT_EXE): $(CLIENT_SOURCE) 
+	$(CC) $(CLIENT_SOURCE) -o $(CLIENT_EXE)
+$(SERVER_EXE): $(SERVER_SOURCE) 
+	$(CC) $(SERVER_SOURCE) -o $(SERVER_EXE)
+clean:
+	rm -f $(CLIENT_EXE) $(SERVER_EXE)
